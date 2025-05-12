@@ -17,6 +17,7 @@ export class BookService {
     // return throwError(() => err);
 
     // Simulate a successful response
+    // return of(book); //this is the old way
     return scheduled([book], asyncScheduler);
   }
 }
